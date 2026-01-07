@@ -14,9 +14,27 @@
         }
         .main{
             border:2px solid purple;
+            display:grid;
+            height:500px;
+            grid-template-areas:
+            'centerbox centerbox centerbox'
+            'centerbox centerbox centerbox'
+            'follow guestbook guestbook';
         }
         .side{
             border:2px solid black;
+        }
+        .centerbox{
+            grid-area:centerbox;
+            border: 2px solid black;
+        }
+        .follow{
+            grid-area:follow;
+            border:2px solid black;
+        }
+        .guestbook{
+            grid-area:guestbook;
+            border:2ps solid black;
         }
     </style>
 </head>
@@ -28,7 +46,9 @@
         <main class="main">
 
         </main>
-        <aside class="side right-side"></aside>
+        <aside class="side right-side">
+
+        </aside>
     </div>
 </body>
 </html>
