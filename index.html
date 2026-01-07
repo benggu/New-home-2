@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House of Housepen</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/boxes-styles.css">
 
 </head>
 <body>
     <span aria-hidden='true'>housepen V3.0</span>
     <div class="wrapper">
         
-        <main class="main">
+        <div class="main">
             <div class="topper">
                 <img src="/assets/frobert.webp" class="header-img frobert">
                 <img src="/assets/bob.webp" class="header-img bob">
@@ -25,15 +26,15 @@
                 <a href="#">playroom</a>
                 <a href="#">gallery</a>
             </nav>
-            <div class="centerbox mainbox">centerbox this doesnt workkkkkkk</div>
+            <main class="centerbox mainbox">centerbox this doesnt workkkkkkk</main>
             <div class="follow mainbox">follow</div>
             <div class="guestbook mainbox">
                 <h3>guestbook</h3>
-                <iframe src="https://microbenggu.atabook.org/" width="270px"> </iframe><br>
+                <iframe src="https://microbenggu.atabook.org/" width="290px"> </iframe><br>
                 <div class="center"><a href="https://microbenggu.atabook.org/"><div class="button">full link</div></a></div>
             </div>
 
-        </main>
+        </div>
         <aside class="side left-side">
             <div class="topper-side">
                 <img src="/assets/cedar.webp" class="header-s-img">
@@ -41,18 +42,21 @@
             <div class="sidebox">
                     whatever man
             </div>
-            <section class="side-section">
-                <h2>come onn</h2>
-                <div class="sidebox">
-                    whatever man
-                </div>
+            <section class="sidebox writings-box" id="box1">
+                <h2>writings</h2>
+                <p>Where I talk about things nobody wants to listen to.</p>
+                <p>come check it out :)</p>
+                <a class="button">link</a>
             </section>
-            <section class="side-section">
-                <h2>come onn</h2>
-                <div class="sidebox">
-                    whatever man
-                </div>
+            <section class="sidebox gallery-box" id="box2">
+                <h2>gallery</h2>
+                <p>Images collected from who knows where...</p>
+                <p>See them here:</p>
+                <a class="button">link</a>
             </section>
+            <script src="scripts/featuredpages.js">
+
+            </script>
         </aside>
         <aside class="side right-side">
             <div class="topper-side">
