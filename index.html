@@ -16,8 +16,9 @@
             border:2px solid purple;
             display:grid;
             height:500px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 3fr 2fr;
             grid-template-areas:
-            'centerbox centerbox centerbox'
             'centerbox centerbox centerbox'
             'follow guestbook guestbook';
         }
@@ -36,18 +37,28 @@
             grid-area:guestbook;
             border:2ps solid black;
         }
+        .topper{
+            height:200px;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <aside class="side left-side">
+            <div class="topper">
 
+            </div>
         </aside>
         <main class="main">
+            <div class="topper">
+                <header>this is a header</header>
+            </div>
 
         </main>
         <aside class="side right-side">
+            <div class="topper">
 
+            </div>
         </aside>
     </div>
 </body>
