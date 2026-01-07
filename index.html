@@ -58,7 +58,21 @@
             margin:auto;
         }
         .nav{
-            color:yellow;
+            background:yellow;
+            border-radius:50%;
+        }
+        .nav>a{
+            background:blue;
+            border-left: 2px solid red;
+        }
+        .nav>a:first-child{
+            border-radius:50% 0 0 50%;
+            border:2px solid red;
+            border-right:none;
+        }
+        .nav>a:last-child{
+            border-radius:0 50% 50% 0;
+            border:2px solid red;
         }
         
         .nav, .mainbox, .sidebox .right-sidebox{
