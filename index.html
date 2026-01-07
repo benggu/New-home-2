@@ -4,119 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House of Housepen</title>
-    <style>
-        @font-face {
-             font-family: 'KccSign';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
-            font-weight: normal;
-            font-display: swap;
-        }
-        html{
-            background: url("background.png");
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        body{
-            font-family:'KccSign', monospace;
-        }
-        .wrapper{
-            width:900px;
-            height:900px;
-            display:grid;
-            grid-template-columns: 1fr 3fr 1fr;
-            gap: 7px;
-            margin:auto;
-        }
-        .main{
-            display:grid;
-            height:900px;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 100px 40px 3fr 2fr;
-            grid-template-areas:
-            'topper topper topper'
-            'nav nav nav'
-            'centerbox centerbox centerbox'
-            'follow guestbook guestbook';
-            gap:7px;
-        }
-        .side{
-            display:grid;
-            height:900px;
-            gap:7px;
-        }
-        .left-side{
-            grid-template-rows: 100px 1fr 1fr;
-        }
-        .right-side{
-            grid-template-rows: 100px 5fr 1fr;
-        }
-        .centerbox{
-            grid-area:centerbox;
-            
-        }
-        .follow{
-            grid-area:follow;
-            
-        }
-        .guestbook{
-            grid-area:guestbook;
-            
-        }
-        .topper{
-            position:relative;
-            grid-area:topper;
-            
-        }
-        .header{
-            position: absolute;
-            margin:auto;
-            left:0;
-            right:0;
-            top:0;
-            bottom:0;
-        }
-        .nav{
-            grid-area:nav;
-            background:yellow;
-            border-radius:40px;
-            display:flex;
-        }
-        .nav>a{
-            background:blue;
-            border: 2px solid red;
-            border-right:none;
-            flex:1;
-        }
-        .nav>a:first-child{
-            border-radius:40px 0 0 40px;
-        }
-        .nav>a:last-child{
-            border-radius:0 40px 40px 0;
-            border:2px solid red;
-        }
-        
-        .mainbox, .sidebox, .right-sidebox{
-            border-radius: 10px;
-            box-sizing:border-box;
-            padding:10px;
-        }
-        .mainbox{
-            background:white;
-        }
-        .sidebox{
-            background:white;
-        }
-        .right-sidebox{
-            background:white;
-        }
+    <link rel="stylesheet" href="/style.css">
 
-    </style>
 </head>
 <body>
     <div class="wrapper">
         <aside class="side left-side">
-            <div>
-
+            <div class="topper-side">
+                <img src="/assets/cedar.webp" class="header-s-img">
             </div>
             <div class="sidebox">
                 somehow, this isnt that bad
@@ -127,7 +22,11 @@
         </aside>
         <main class="main">
             <div class="topper">
-                <header><img src="logo.png" height="100px" class="logo"></header>
+                <img src="/assets/frobert.webp" class="header-img frobert">
+                <img src="/assets/bob.webp" class="header-img bob">
+                <header class="header"><img src="logo.png" height="120px" class="logo"></header>
+                <img src="/assets/gigi.webp" class="header-img gigi">
+                <img src="/assets/carmen.webp" class="header-img carmen">
             </div>
             <nav class="nav">
                 <a href="#">about</a>
@@ -141,16 +40,16 @@
 
         </main>
         <aside class="side right-side">
-            <div>
-
+            <div class="topper-side">
+                <img src="/assets/cedar.webp" class="header-s-img">
             </div>
             <div class="right-sidebox">
                 blahblahblah
             </div>
-            <div class="sidebox">
-                blablah buhbuuhbuh
-            </div>
         </aside>
+        <footer>
+            this is a footer
+        </footer>
     </div>
 </body>
 </html>

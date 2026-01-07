@@ -1,0 +1,143 @@
+:root{
+    --header-height: 250px;
+}
+@font-face {
+        font-family: 'KccSign';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+html{
+    background: url("background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+body{
+    font-family:'KccSign', monospace;
+}
+.wrapper{
+    width:900px;
+    height:900px;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows:900px 100px;
+    gap: 7px;
+    margin:auto;
+}
+.main{
+    display:grid;
+    height:900px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: var(--header-height) 40px 3fr 2fr 100px;
+    grid-template-areas:
+    'topper topper topper topper topper'
+    'nav nav nav nav nav'
+    'centerbox centerbox centerbox centerbox centerbox'
+    'follow follow guestbook guestbook guestbook'
+    'free free free free free';
+    gap:7px;
+}
+.side{
+    display:grid;
+    height:900px;
+    gap:7px;
+}
+.left-side{
+    grid-template-rows: var(--header-height) 1fr 1fr;
+}
+.right-side{
+    grid-template-rows: var(--header-height) 5fr;
+}
+.centerbox{
+    grid-area:centerbox;
+    
+}
+.follow{
+    grid-area:follow;
+    
+}
+.guestbook{
+    grid-area:guestbook;
+    
+}
+.topper{
+    position:relative;
+    grid-area:topper;
+    
+}
+.topper-side{
+    position: relative;
+}
+.frobert{
+    left:10px;
+}
+.bob{
+    left:100px;
+    
+}
+.gigi{
+    right:10px;
+}
+.carmen{
+    right:100px;
+}
+.logo{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    z-index: -1;
+}
+.header-img{
+    position:absolute;
+    bottom:-9px;
+}
+.header-s-img{
+    position:absolute;
+    bottom:-15px;
+}
+footer{
+    color:white;
+}
+.nav{
+    grid-area:nav;
+    background:yellow;
+    border-radius:40px;
+    display:flex;
+}
+.nav>a{
+    background:blue;
+    border: 2px solid red;
+    border-right:none;
+    flex:1;
+    text-decoration: none;
+    color:white;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.nav>a:first-child{
+    border-radius:40px 0 0 40px;
+}
+.nav>a:last-child{
+    border-radius:0 40px 40px 0;
+    border:2px solid red;
+}
+
+.mainbox, .sidebox, .right-sidebox{
+    border-radius: 10px;
+    box-sizing:border-box;
+    padding:10px;
+}
+.mainbox{
+    background:white;
+}
+.sidebox{
+    background:white;
+}
+.right-sidebox{
+    background:white;
+}
