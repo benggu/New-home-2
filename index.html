@@ -17,8 +17,9 @@
             display:grid;
             height:500px;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 3fr 2fr;
+            grid-template-rows: 1fr 3fr 2fr;
             grid-template-areas:
+            'topper topper topper'
             'centerbox centerbox centerbox'
             'follow guestbook guestbook';
         }
@@ -39,7 +40,9 @@
         }
         .topper{
             height:200px;
+            grid-area:topper;
         }
+
     </style>
 </head>
 <body>
@@ -53,6 +56,9 @@
             <div class="topper">
                 <header>this is a header</header>
             </div>
+            <div class="centerbox">centerbox</div>
+            <div class="follow">follow</div>
+            <div class="guestbook">guestbook</div>
 
         </main>
         <aside class="side right-side">
