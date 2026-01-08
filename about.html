@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Housepen</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .wrapper{
+            width:1000px;
+            margin:auto;
+            display:grid;
+            grid-template-rows: var(--header-height) 50px;
+            grid-template-columns: 180px 1fr 1fr 180px;
+            grid-template-areas:
+            '. topper topper .'
+            'b b b b'
+            'main main main side';
+            gap:7px;
+        }
+        .main{
+            grid-area:main;
+            background:url("assets/browns.png");
+            border-radius: 10px;
+            box-shadow: inset 5px 5px 5px rgba(255, 255, 255,0.5),
+                        inset -5px -5px 5px rgba(0, 0, 0,0.3),
+                        0 0 5px rgba(0,0,0,0.4);
+            padding:25px;
+            color:#bf9c4e;
+        }
+        .main h1, .main h2, .main h3{
+            -webkit-text-stroke: #9d6e45 1px;
+        }
+        a{
+            color:rgb(228, 111, 111);
+        }
+        .boundary{
+            grid-area:b;
+            border-radius: 10px;
+            background-color: #bf9c4e;
+            display:flex;
+            align-items: center;
+            box-shadow: inset 5px 5px 5px rgb(255, 255, 255,0.5),
+                        inset -5px -5px 5px rgb(0, 0, 0,0.3),
+                        0 0 5px rgba(0,0,0,0.4);
+        }
+        .boundary img{
+            box-shadow: 0 0 4px rgb(0, 0, 0,0.6);
+        }
+        .side{
+            grid-area:side;
+            position:sticky;
+            top:10px;
+            align-self: start;
+        }
+        .topper{
+            grid-area:topper;
+        }
+    </style>
+</head>
+<body>
+    <span aria-hidden='true' style="color:white;font-family: monospace;">housepen V3.0</span>
+    <div class="wrapper">
+        
+        <div class="main">
+            <div class="right-contentbox">
+                <h1 class="center">About the House of Housepen</h1>
+                <img src="/assets/bob_float.webp" width="300px" alt="animal crossing bob floating" style="float:left">
+                <p>The website House of Housepen was created by <span style="color:rgb(228, 111, 111)">Benggu</span> on the
+                <span style="color:rgb(228, 111, 111)">24th of April, 2024</span>.</p>
+                <p>In it's current iteration, Housepen exists to bring users a feeling of fresh interactivity and community within the projects and 
+                    sub-pages it hosts. It's design(in both visuals and philosophy) was inspired by (the late) Korean children's portal site <a href="#">Junior Naver</a>.
+                </p>
+            </div>
+            
+        </div>
+        <aside class="side">
+            <div class="right-sidebox">
+                <div class="right-contentbox">
+                    <nav class="bignav">
+                        <h2 class="nav-subtitle">Main</h2>
+                        <ul>
+                            <a href="/"><li>Home</li></a>
+                            <a href="/about.html"><li>About</li></a>
+                            <a href="#"><li>Blog</li></a>
+                            
+                        </ul>
+                        <h2 class="nav-subtitle">Playroom</h2>
+                        <ul>
+                            <a href="/playroom/index.html"><li>Index</li></a>
+                            <a href="#"><li>Games</li></a>
+                            <a href="#"><li>Doodads</li></a>
+                            <a href="#"><li>Fansites</li></a>
+                            <a href="#"><li>Gallery</li></a>
+                        </ul>
+                        <h2 class="nav-subtitle">Resources</h2>
+                        <ul>
+                            <a href="#"><li>Index</li></a>
+                            <a href="#"><li>Images</li></a>
+                            <a href="#"><li>Snippets</li></a>
+                        </ul>
+                        <h2 class="nav-subtitle">Misc.</h2>
+                        <ul>
+                            <a href="#"><li>Outlinks</li></a>
+                            <a href="#"><li>Credits</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+        <div class="topper">
+                <img src="/assets/frobert.webp" class="header-img frobert">
+                <img src="/assets/bob.webp" class="header-img bob">
+                <header class="header"><img src="logo.png" height="120px" class="logo"></header>
+                <img src="/assets/gigi.webp" class="header-img gigi">
+                <img src="/assets/carmen.webp" class="header-img carmen">
+        </div>
+        <div class="boundary" aria-hidden="true">
+            <marquee>
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+                <img src="/assets/housepen.gif">
+                <img src="/assets/housepen.png">
+            </marquee>
+        </div>
+    <script src="/scripts/cursortrailer.js"></script>
+
+</body>
+</html>

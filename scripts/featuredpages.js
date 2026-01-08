@@ -3,7 +3,7 @@ function randint(min, max) {
 }
 
 boxes=[
-    {class:'deltarune-box',link:"#",html:"<h2>the Deltarune section</h2><p>A small subsection of this site dedicated to hit indie game Deltarune.</p>"},
+    {class:'deltarune-box',link:"#",html:"<h2>the Deltarune section</h2><p>A small subsection of this site dedicated to hit indie game Deltarune.</p><img src='/assets/tenna.gif' height='80px'>"},
     {class:'writings-box',link:"#",html:"<h2>writings</h2><p>Where I talk about things nobody wants to listen to.</p><p>Come check it out:</p>"},
     {class:'gallery-box',link:"#",html:"<h2>gallery</h2><p>Images collected from various places....</p>"},
     {class:'gameroom-box',link:"#",html:"<h2>gameroom</h2><p>Play games! Play fun games. Play them. Play them now.</p>"},

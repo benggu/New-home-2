@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House of Housepen</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/index-style.css">
     <link rel="stylesheet" href="/styles/boxes-styles.css">
-
 </head>
 <body>
-    <span aria-hidden='true'>housepen V3.0</span>
+    <span aria-hidden='true' style="color:white;font-family: monospace;">housepen V3.0</span>
     <div class="wrapper">
         
         <div class="main">
@@ -21,17 +21,42 @@
                 <img src="/assets/carmen.webp" class="header-img carmen">
             </div>
             <nav class="nav">
-                <a href="#">about</a>
+                <a href="/about.html">about</a>
                 <a href="#">blog</a>
-                <a href="#">playroom</a>
+                <a href="/playroom/index.html">playroom</a>
                 <a href="#">gallery</a>
             </nav>
-            <main class="centerbox mainbox">centerbox this doesnt workkkkkkk</main>
-            <div class="follow mainbox">follow</div>
-            <div class="guestbook mainbox">
-                <h3>guestbook</h3>
-                <iframe src="https://microbenggu.atabook.org/" width="290px"> </iframe><br>
-                <div class="center"><a href="https://microbenggu.atabook.org/"><div class="button">full link</div></a></div>
+            <main class="centerbox mainbox">
+                <div class="contentbox">
+                    <h1 class="center">Welcome to the <span>House of Housepen</span>!</h1>
+                    <p>This site is for hosting things that're fun!</p>
+                    <p>Check out our randomly-chosen <span style="color:#ce4848;"><span aria-hidden="true">←</span>featured pages</span> on the left, or explore on your own
+                    with out <span style="color:#ce4848;">sitemap<span aria-hidden="true">→</span></span> on the right! </p>
+                    <img src="/resources/gifs/karen_spin.gif" style="filter:drop-shadow(0 0 4px rgba(0,0,0,0.6));float:right">
+                    </div>
+            </main>
+            <div class="section follow">
+                <h2>follow</h2>
+                <div class="followbox mainbox">
+                    <div class="center">follow on nekoweb</div><hr>
+                    <h3 class="center">add my button:</h3>
+                    <img src="/assets/housepen.gif" class="block center" alt="housepen button" title="housepen 88x30 button number one!!">
+                    <img src="/assets/housepen.png" class="block center" alt="housepen button" title="housepen 88x30 button number two!!">
+                    <textarea>
+<a href="https://housepen.nekoweb.org/"><img src="/housepen.gif"></a>
+                    </textarea>
+                    <button class="block center" id="copy-webbutton">click to copy</button>
+                </div>
+            </div>
+            <div class="guestbook section">
+                <h2>guestbook</h2>
+                <div class="mainbox guestbookbox">
+                    <iframe src="https://microbenggu.atabook.org/" width="290px"> </iframe><br>
+                    <div class="center"><a href="https://microbenggu.atabook.org/"><div class="button">full link</div></a></div>
+                </div>
+            </div>
+            <div class="mainbox free">
+                Webrings go here
             </div>
 
         </div>
@@ -39,16 +64,16 @@
             <div class="topper-side">
                 <img src="/assets/cedar.webp" class="header-s-img">
             </div>
-            <div class="sidebox">
+            <div class="sidebox side-top-box">
                     whatever man
             </div>
-            <section class="sidebox writings-box" id="box1">
+            <section class="writings-box" id="box1">
                 <h2>writings</h2>
                 <p>Where I talk about things nobody wants to listen to.</p>
                 <p>come check it out :)</p>
                 <a class="button">link</a>
             </section>
-            <section class="sidebox gallery-box" id="box2">
+            <section class="gallery-box" id="box2">
                 <h2>gallery</h2>
                 <p>Images collected from who knows where...</p>
                 <p>See them here:</p>
@@ -67,14 +92,14 @@
                     <nav class="bignav">
                         <h2 class="nav-subtitle">Main</h2>
                         <ul>
-                            <a href="#"><li>Home</li></a>
-                            <a href="#"><li>About</li></a>
+                            <a href="/"><li>Home</li></a>
+                            <a href="/about.html"><li>About</li></a>
                             <a href="#"><li>Blog</li></a>
                             
                         </ul>
                         <h2 class="nav-subtitle">Playroom</h2>
                         <ul>
-                            <a href="#"><li>Index</li></a>
+                            <a href="/playroom/index.html"><li>Index</li></a>
                             <a href="#"><li>Games</li></a>
                             <a href="#"><li>Doodads</li></a>
                             <a href="#"><li>Fansites</li></a>
@@ -99,5 +124,13 @@
             this is a footer
         </footer>
     </div>
+    <script src="/scripts/cursortrailer.js"></script>
+    <script>
+        document.getElementById("copy-webbutton").addEventListener("click",(e)=>{
+            window.navigator.clipboard.writeText('<a href="https://housepen.nekoweb.org/"><img src="/housepen.gif"></a>');
+        document.getElementById("copy-webbutton").innerHTML="copied!";
+        })
+    </script>
+
 </body>
 </html>

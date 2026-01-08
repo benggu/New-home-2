@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@font-face {
+    font-family: 'DaeguDongseongRo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/DaeguDongseongro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;padding:0;
+    overflow-x: hidden;
+}
+body{
+    background:url("/deltarune/assets/bgviolets.gif");
+    font-family: 'DaeguDongseongRo'
+}
+.toplace{
+    width: 4378px;
+    background-image: url("/deltarune/assets/lace.png");
+    background-repeat:round;
+    height:100px;
+    top:-25px;
+    position: relative;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px black);
+    
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    margin-left:7px;
+}
+.divider{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 6px;
+}
+
+.side, .main{
+    color:white;
+    padding:7px;
+    box-sizing: border-box;
+    margin:13px;
+}
+.side{
+    background-color: rgb(6, 1, 20);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+    height:600px;
+}
+.main{
+    background-color: rgb(6, 1, 20);
+    padding: 30px;
+}
+.broider {
+    border-image:  url("/deltarune/assets/border.png") 28 /  28px / 1 round;
+    border-width:  15px;
+    border-style:  solid;
+}
+#title{
+    text-align: center;
+    color:white;
+    margin-top: 150px;
+    font-family: 'Imperial Script', cursive;
+    font-size: 100px;
+    text-shadow: 9px 9px 4px black;
+    z-index:12;
+}
+#title>span{
+    text-decoration: underline 4px solid;
+}
+h1,h2,h3,h4,h5{
+    padding:0; margin:0;
+    margin-bottom:20px;
+}
+
+a{
+    color:yellow;
+    text-decoration: underline dotted yellow 1px;
+}
+
+.framed{
+    width: 80%;
+    margin: auto;
+    margin-top:11px;
+    margin-bottom:11px;
+    display: flex;
+    border-radius: 7px;
+    text-align: center;
+    border:1px dotted rgb(127, 118, 68);
+}
+
+.snowarea{
+    position:fixed;
+    width:100%;
+    right:0;
+    top:-40px;
+    display:flex;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+
+#holly{
+    scale:-1 1;
+    position: fixed;
+    top:-30px;right:-30px;
+    z-index: 2;
+    filter:drop-shadow(3px 0 0 black,20px 0 0 black)
+}
+
+.center{
+    text-align: center;
+    margin:auto;
+    display:block;
+}
+
+.nav{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.nav a{
+    text-decoration: none;
+}
+.nav li{
+    transition: all 0.2s;
+    margin-bottom: 15px;
+}
+.nav li:hover{
+    transform:scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2500px){
+	.wrapper{
+        width:1000px
+    }
+}
+@media only screen and (max-width: 900px){
+    .widebar{
+        display:none
+    }
+	.wrapper{
+        grid-template-columns: none;
+    }
+    .divider{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 4fr;
+    }
+    #holly{
+        display: none;
+    }
+    .side{
+        grid-row:1;
+        position:static;
+        height:200px;
+        width:90vw;
+    }
+    .main{
+        grid-row:2;
+        position:static;
+        width:90vw;
+    }
+    .nav{
+        display:flex;
+        gap:10px;
+    }
+}
+
+
+
+
+
+/*fuckass snowflakes*/
+
+@keyframes fallingsnow{
+    0%{
+        transform: translateY(-400px);
+    }
+    100%{
+        transform: translateY(100vh);
+    }
+
+}
+@keyframes shake{
+    0%{
+        left:-20px
+    }
+    50%{
+        left:20px;
+    }
+    100%{
+        left:-20px;
+    }
+
+}
+.snowflake{
+    font-family: monospace;
+    font-size: 30px;
+    color:rgba(255,255,255,0.3);
+    position: relative;
+}
+.snowflake:nth-child(1){
+    animation: 6s fallingsnow 0s infinite linear, 2s shake 1s infinite ease-in-out;
+}
+.snowflake:nth-child(2){
+    animation: 6s fallingsnow 5s infinite linear, 3s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(3){
+    animation: 6s fallingsnow 2s infinite linear, 2s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(4){
+    animation: 6s fallingsnow 3s infinite linear, 3s shake 1s infinite ease-in-out;
+}
+.snowflake:nth-child(5){
+    animation: 6s fallingsnow 7s infinite linear, 2s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(6){
+    animation: 6s fallingsnow 6s infinite linear, 3s shake 1s infinite ease-in-out;
+}
+.snowflake:nth-child(7){
+    animation: 6s fallingsnow 8s infinite linear, 3s shake 1s infinite ease-in-out;
+}
+.snowflake:nth-child(8){
+    animation: 6s fallingsnow 1s infinite linear, 2s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(9){
+    animation: 6s fallingsnow 4s infinite linear, 3s shake 1s infinite ease-in-out;
+}
+.snowflake:nth-child(10){
+    animation: 6s fallingsnow 2s infinite linear, 3s shake 1s infinite ease-in-out;
+}
+.snowflake:nth-child(11){
+    animation: 6s fallingsnow 0s infinite linear, 2s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(12){
+    animation: 6s fallingsnow 5s infinite linear, 3s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(13){
+    animation: 6s fallingsnow 2s infinite linear, 3s shake 1s infinite ease-in-out;
+}
+.snowflake:nth-child(14){
+    animation: 6s fallingsnow 3s infinite linear, 2s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(15){
+    animation: 6s fallingsnow 7s infinite linear, 3s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(16){
+    animation: 6s fallingsnow 6s infinite linear, 3s shake 1s infinite ease-in-out;
+}
+.snowflake:nth-child(17){
+    animation: 6s fallingsnow 8s infinite linear, 2s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(18){
+    animation: 6s fallingsnow 1s infinite linear, 3s shake 2s infinite ease-in-out;
+}
+.snowflake:nth-child(19){
+    animation: 6s fallingsnow 4s infinite linear, 3s shake 2s infinite ease-in-out;
+}
